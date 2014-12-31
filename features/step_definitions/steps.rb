@@ -8,6 +8,10 @@ class Account
   end
 end
 
+Transform /^\d+$/ do |number|
+  number.to_i
+end
+
 Given /^I have deposited \$(\d+) in my account$/ do |amount|
   my_account = Account.new
   my_account.deposit(amount.to_i)

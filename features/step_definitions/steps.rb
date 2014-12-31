@@ -1,3 +1,4 @@
+#Will eventually move this account class to its own class file
 class Account
   def deposit(amount)
     @balance = amount

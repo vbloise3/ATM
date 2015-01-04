@@ -8,5 +8,5 @@ When /^I request (#{CAPTURE_CASH_AMOUNT})$/ do |amount|
 end
 
 Then /^(#{CAPTURE_CASH_AMOUNT}) should be dispensed$/ do |amount|
-  expect(cash_slot.contents).to eq(amount)
+  expect(cash_slot.contents).to eq(amount+1)
 end

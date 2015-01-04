@@ -18,7 +18,7 @@ end
 
 class CashSlot
   def contents
-    @contents or raise("I'm empty!")
+    @contents or raise("I'm empty!!")
   end
   def dispense(amount)
     @contents = amount
